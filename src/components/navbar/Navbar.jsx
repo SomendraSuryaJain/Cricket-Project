@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import { Menu, X } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     // State to handle drawer open/close
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <nav className='relative h-24 flex items-center justify-between p-6 md:p-10'>
             {/* Logo Section */}
             <div className='flex items-center gap-2'>
-                <img src="/pic.png" alt="Logo" className='h-24 w-24 object-contain' />
+                <img src="/logo.jpg" alt="Logo" className='h-24 w-30 object-contain' />
                 <div className='leading-tight '>
-                    <h1 className='text-red-500 font-bold text-lg md:text-2xl'>Colvin Cricket</h1>
-                    <p className='text-sm'>Coaching Academy</p>
+                    <h1 className='text-red-500 font-bold text-lg md:text-3xl'>AB Cricket</h1>
+                    <p className='font-bold text-lg'>Development Academy</p>
                 </div>
             </div>
 
@@ -42,16 +44,16 @@ const Navbar = () => {
 
                 {/* Drawer Links */}
                 <ul className="flex flex-col gap-6 p-10 font-bold text-white">
-                    <li className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Home</li>
-                    <li className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">About Us</li>
-                    <li className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Our Achievements</li>
-                    <li className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">New Registration</li>
-                    <li className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Our Coach</li>
-                    <li className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Fees Structure</li>
-                    <li className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Gallery</li>
-                    <li className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Contact us</li>
-                    <li className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Disclaimer</li>
-                    <li className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Login</li>
+                    <li onClick={() => navigate('/')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Home</li>
+                    <li onClick={() => navigate('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">About Us</li>
+                    <li onClick={() => navigate('/achievements')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Our Achievements</li>
+                    <li onClick={() => navigate('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">New Registration</li>
+                    <li onClick={() => navigate('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Our Coach</li>
+                    <li onClick={() => navigate('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Fees Structure</li>
+                    <li onClick={() => navigate('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Gallery</li>
+                    <li onClick={() => navigate('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Contact us</li>
+                    <li onClick={() => navigate('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Disclaimer</li>
+                    <li onClick={() => navigate('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Login</li>
                 </ul>
             </div>
         </nav>
