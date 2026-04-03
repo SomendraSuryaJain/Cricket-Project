@@ -44,7 +44,7 @@ const AboutUs = () => {
 
                 {/* Image */}
                 <div className="mt-6">
-                    <img src="src\Assets\player.jpg" alt="academy" className="w-full h-56 md:h-72 object-cover rounded-md"/>
+                    <img src="src\Assets\player.jpg" alt="academy" className="w-full h-56 md:h-72 object-cover rounded-md" />
                 </div>
 
                 {/* Extra Text */}
@@ -101,13 +101,11 @@ const AboutUs = () => {
                     </div>
 
                 </div>
+            </div>
 
-                {/* Footer */}
-                <div className="w-full mt-10 pt-4 border-t border-gray-500 text-right">
-                    <p className="text-md md:text-xl text-gray-600 hover:text-red-400 cursor-pointer transition">Check & Mate e tech Solution
-                    </p>
-                </div>
-
+            {/* Footer Line */}
+            <div className="mt-10 border-t border-black pt-2 text-center text-lg text-black">
+                Check & Mate e tech Solution
             </div>
         </div>
     );

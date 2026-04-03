@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       {/* FIRST SECTION */}
@@ -32,11 +35,11 @@ const AboutUs = () => {
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 mt-8">
-              <button className="bg-red-300 text-white px-6 py-3 rounded hover:bg-red-400 transition">Know more</button>
+              <button onClick={() => navigate('/about')} className="bg-red-300 text-white px-6 py-3 rounded hover:bg-red-400 transition">Know more</button>
 
-              <button className="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600 transition">New Admission</button>
+              <button onClick={() => navigate('/registration')} className="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600 transition">New Admission</button>
 
-              <button className="bg-red-700 text-white px-6 py-3 rounded hover:bg-red-800 transition">Our Achievements</button>
+              <button onClick={() => navigate('/achievements')} className="bg-red-700 text-white px-6 py-3 rounded hover:bg-red-800 transition">Our Achievements</button>
             </div>
           </div>
         </div>
