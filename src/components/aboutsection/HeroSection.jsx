@@ -21,9 +21,12 @@ const slides = [
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-[55vh] md:h-[65vh] relative">
+    <div className="w-full h-[35vh] md:h-[40vh] relative">
       <Swiper modules={[Autoplay, EffectFade]} effect="fade"
-        autoplay={{ delay: 5000, disableOnInteraction: false}} loop={true} className="h-full">
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }} loop={true} className="h-full">
         {slides.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="relative w-full h-full">

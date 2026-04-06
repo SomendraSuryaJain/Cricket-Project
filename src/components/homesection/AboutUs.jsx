@@ -20,11 +20,9 @@ const AboutUs = () => {
           
           {/* Image */}
           <div className="w-full md:w-1/2">
-            <img
-              src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/HZGU7QHJDFO55DR6YZPG5ZEZSA.jpg"
+            <img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/HZGU7QHJDFO55DR6YZPG5ZEZSA.jpg"
               alt="cricket"
-              className="w-full h-auto rounded-4xl"
-            />
+              className="w-full h-auto rounded-4xl"/>
           </div>
 
           {/* Content */}
@@ -49,7 +47,7 @@ const AboutUs = () => {
       <div className="relative w-full h-[400px] md:h-[500px]">
         
         {/* Background Image */}
-        <img src="https://wallpaperaccess.com/full/1315984.jpg" alt="academy" className="w-full h-full object-cover"/>
+        <img src="https://wallpaperaccess.com/full/1315984.jpg" alt="academy" className="w-full h-full object-fit-cover"/>
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/20"></div>

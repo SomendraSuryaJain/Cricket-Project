@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../../components/homesection/HeroSection'
+import HeroSection from '../../components/aboutgallery/HeroSection'
 import AboutGallery from '../../components/aboutgallery/AboutGallery'
 
 const Gallery = () => {

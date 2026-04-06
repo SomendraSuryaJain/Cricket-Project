@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../../components/homesection/HeroSection'
+import HeroSection from '../../components/aboutcontact/HeroSection'
 import AboutContactUs from '../../components/aboutcontact/AboutContactUs'
 
 const ContactUs = () => {

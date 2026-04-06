@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../../components/homesection/HeroSection'
+import HeroSection from '../../components/aboutdisclaimer/HeroSection'
 import AboutDisclaimer from '../../components/aboutdisclaimer/AboutDisclaimer';
 
 const Disclaimer = () => {

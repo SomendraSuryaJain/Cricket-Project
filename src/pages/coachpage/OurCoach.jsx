@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../../components/homesection/HeroSection'
+import HeroSection from '../../components/aboutcoach/HeroSection'
 import AboutCoach from '../../components/aboutcoach/AboutCoach';
 
 const OurCoach = () => {

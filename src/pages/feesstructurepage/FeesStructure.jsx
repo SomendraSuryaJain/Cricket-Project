@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../../components/homesection/HeroSection'
+import HeroSection from '../../components/aboutfeestructure/HeroSection'
 import AboutFeesStructure from '../../components/aboutfeestructure/AboutFeesStructure';
 
 const FeesStructure = () => {

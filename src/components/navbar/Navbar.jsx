@@ -7,6 +7,12 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const navigate = useNavigate();
 
+    // Custom function: Navigate karega aur drawer band kar dega
+    const handleNavigation = (path) => {
+        navigate(path);
+        setIsOpen(false);
+    };
+
     return (
         <nav className='relative h-24 flex items-center justify-between p-6 md:p-10'>
             {/* Logo Section */}
@@ -27,7 +33,6 @@ const Navbar = () => {
             </div>
 
             {/* --- Drawer Overlay --- */}
-            {/* Jab drawer open ho, background thoda dark ho jaye */}
             {isOpen && (
                 <div 
                     className="fixed inset-0 bg-black/50 z-40 transition-opacity"
@@ -44,16 +49,16 @@ const Navbar = () => {
 
                 {/* Drawer Links */}
                 <ul className="flex flex-col gap-6 p-10 font-bold text-white">
-                    <li onClick={() => navigate('/')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Home</li>
-                    <li onClick={() => navigate('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">About Us</li>
-                    <li onClick={() => navigate('/achievements')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Our Achievements</li>
-                    <li onClick={() => navigate('/registration')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">New Registration</li>
-                    <li onClick={() => navigate('/coach')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Our Coach</li>
-                    <li onClick={() => navigate('/feesStructure')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Fees Structure</li>
-                    <li onClick={() => navigate('/gallery')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Gallery</li>
-                    <li onClick={() => navigate('/contactus')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Contact us</li>
-                    <li onClick={() => navigate('/disclaimer')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Disclaimer</li>
-                    <li onClick={() => navigate('/login')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Login</li>
+                    <li onClick={() => handleNavigation('/')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Home</li>
+                    <li onClick={() => handleNavigation('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">About Us</li>
+                    <li onClick={() => handleNavigation('/achievements')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Our Achievements</li>
+                    <li onClick={() => handleNavigation('/registration')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">New Registration</li>
+                    <li onClick={() => handleNavigation('/coach')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Our Coach</li>
+                    <li onClick={() => handleNavigation('/feesStructure')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Fees Structure</li>
+                    <li onClick={() => handleNavigation('/gallery')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Gallery</li>
+                    <li onClick={() => handleNavigation('/contactus')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Contact us</li>
+                    <li onClick={() => handleNavigation('/disclaimer')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Disclaimer</li>
+                    <li onClick={() => handleNavigation('/login')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Login</li>
                 </ul>
             </div>
         </nav>

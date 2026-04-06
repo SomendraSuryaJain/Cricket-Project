@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../../components/homesection/HeroSection'
+import HeroSection from '../../components/aboutachievement/HeroSection'
 import AboutAchievements from '../../components/aboutachievement/AboutAchievements';
 
 const OurAchievements = () => {

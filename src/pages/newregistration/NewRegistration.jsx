@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../../components/homesection/HeroSection'
+import HeroSection from '../../components/registrationform/HeroSection'
 import RegistrationForm from '../../components/registrationform/RegistrationForm';
 
 const NewRegistration = () => {
