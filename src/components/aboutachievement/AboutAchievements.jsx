@@ -197,12 +197,6 @@ const AboutAchievements = () => {
                 .custom-scrollbar::-webkit-scrollbar-thumb { background: #fca5a5; border-radius: 10px; }
                 .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #ef4444; }
             `}} />
-
-
-      {/* Footer Line */}
-         <div className="mt-10 border-t border-black pt-2 text-center text-lg text-black">
-           Check & Mate e tech Solution
-         </div>
       </div>
     </div>
   );

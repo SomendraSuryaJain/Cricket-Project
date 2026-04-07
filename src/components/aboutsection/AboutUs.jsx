@@ -102,11 +102,6 @@ const AboutUs = () => {
 
                 </div>
             </div>
-
-            {/* Footer Line */}
-            <div className="mt-10 border-t border-black pt-2 text-center text-lg text-black">
-                Check & Mate e tech Solution
-            </div>
         </div>
     );
 };

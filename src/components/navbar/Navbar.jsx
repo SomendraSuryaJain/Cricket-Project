@@ -17,9 +17,9 @@ const Navbar = () => {
         <nav className='relative h-24 flex items-center justify-between p-6 md:p-10'>
             {/* Logo Section */}
             <div className='flex items-center gap-2'>
-                <img src="/logo.jpg" alt="Logo" className='h-24 w-30 object-contain' />
+                <img src="/Picture.png" alt="Logo" className='h-24 w-40 object-contain' />
                 <div className='leading-tight '>
-                    <h1 className='text-red-500 font-bold text-lg md:text-3xl'>AB Cricket</h1>
+                    <h1 className='text-green-500 font-bold text-lg md:text-3xl'>AB Cricket</h1>
                     <p className='font-bold text-lg'>Development Academy</p>
                 </div>
             </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
                     <li onClick={() => handleNavigation('/gallery')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Gallery</li>
                     <li onClick={() => handleNavigation('/contactus')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Contact us</li>
                     <li onClick={() => handleNavigation('/disclaimer')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Disclaimer</li>
-                    <li onClick={() => handleNavigation('/login')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Login</li>
+                    {/* <li onClick={() => handleNavigation('/login')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Login</li> */}
                 </ul>
             </div>
         </nav>

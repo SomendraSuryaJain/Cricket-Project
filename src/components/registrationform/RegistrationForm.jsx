@@ -41,8 +41,7 @@ const RegistrationForm = () => {
 
       <form
         onSubmit={handleSubmit}
-        className="max-w-6xl mx-auto bg-red-100 p-6 rounded-lg shadow-md"
-      >
+        className="max-w-6xl mx-auto bg-green-200 p-6 rounded-lg shadow-md">
         {/* Date */}
         <p className="text-md font-bold mb-4">Today: {today}</p>
 
@@ -52,23 +51,13 @@ const RegistrationForm = () => {
           {/* Full Name */}
           <div>
             <label className="text-sm font-bold">Full Name</label>
-            <input
-              type="text"
-              name="fullName"
-              onChange={handleChange}
-              className="w-full border rounded px-3 py-2 mt-1"
-            />
+            <input type="text" name="fullName" onChange={handleChange} className="w-full border rounded px-3 py-2 mt-1"/>
           </div>
 
           {/* Category */}
           <div>
             <label className="text-sm font-bold">Category</label>
-            <select
-              name="category"
-              value={formData.category}
-              onChange={handleChange}
-              className="w-full border rounded px-3 py-2 mt-1"
-            >
+            <select name="category" value={formData.category} onChange={handleChange} className="w-full border rounded px-3 py-2 mt-1">
               <option>Fresher</option>
               <option>Experienced</option>
             </select>
@@ -77,12 +66,7 @@ const RegistrationForm = () => {
           {/* Student Occupation */}
           <div>
             <label className="text-sm font-bold">Student's Occupation</label>
-            <select
-              name="studentOccupation"
-              value={formData.studentOccupation}
-              onChange={handleChange}
-              className="w-full border rounded px-3 py-2 mt-1"
-            >
+            <select name="studentOccupation" value={formData.studentOccupation} onChange={handleChange} className="w-full border rounded px-3 py-2 mt-1">
               <option>Businessman</option>
               <option>Student</option>
               <option>Other</option>
@@ -92,23 +76,13 @@ const RegistrationForm = () => {
           {/* DOB */}
           <div>
             <label className="text-sm font-bold">Date of Birth</label>
-            <input
-              type="date"
-              name="dob"
-              onChange={handleChange}
-              className="w-full border rounded px-3 py-2 mt-1"
-            />
+            <input type="date" name="dob" onChange={handleChange} className="w-full border rounded px-3 py-2 mt-1"/>
           </div>
 
           {/* Gender */}
           <div>
             <label className="text-sm font-bold">Gender</label>
-            <select
-              name="gender"
-              value={formData.gender}
-              onChange={handleChange}
-              className="w-full border rounded px-3 py-2 mt-1"
-            >
+            <select name="gender" value={formData.gender} onChange={handleChange} className="w-full border rounded px-3 py-2 mt-1">
               <option>Male</option>
               <option>Female</option>
             </select>
@@ -117,23 +91,13 @@ const RegistrationForm = () => {
           {/* Father's Name */}
           <div>
             <label className="text-sm font-bold">Father's Name</label>
-            <input
-              type="text"
-              name="fatherName"
-              onChange={handleChange}
-              className="w-full border rounded px-3 py-2 mt-1"
-            />
+            <input type="text" name="fatherName" onChange={handleChange} className="w-full border rounded px-3 py-2 mt-1"/>
           </div>
 
           {/* Father's Occupation */}
           <div>
             <label className="text-sm font-bold">Father's Occupation</label>
-            <select
-              name="fatherOccupation"
-              value={formData.fatherOccupation}
-              onChange={handleChange}
-              className="w-full border rounded px-3 py-2 mt-1"
-            >
+            <select name="fatherOccupation" value={formData.fatherOccupation} onChange={handleChange} className="w-full border rounded px-3 py-2 mt-1">
               <option>Businessman</option>
               <option>Service</option>
               <option>Other</option>
@@ -239,11 +203,6 @@ const RegistrationForm = () => {
           </button>
         </div>
       </form>
-
-      {/* Footer Line */}
-      <div className="mt-10 border-t border-black pt-2 text-center text-lg text-black">
-        Check & Mate e tech Solution
-      </div>
     </div>
   );
 };

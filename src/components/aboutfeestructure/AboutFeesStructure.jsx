@@ -55,11 +55,6 @@ const AboutFeesStructure = () => {
         <img src="https://colvincricketcoachingacademy.com/Cricket/images/fees3.jpg" alt="fees3"
           className="w-full h-auto object-cover rounded-lg shadow-md hover:scale-105 transition"/>
       </div>
-
-      {/* Footer Line */}
-      <div className="mt-10 border-t border-black pt-2 text-center text-lg text-black">
-        Check & Mate e tech Solution
-      </div>
     </div>
   );
 };

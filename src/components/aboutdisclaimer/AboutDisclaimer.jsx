@@ -40,7 +40,7 @@ const AboutDisclaimer = () => {
       </div>
 
       {/* Rules List */}
-      <div className="bg-red-100 rounded-2xl p-6 md:p-10 shadow-sm border-4 border-gray-200">
+      <div className="bg-green-200 rounded-2xl p-6 md:p-10 shadow-sm border-4 border-blue-200">
         <ul className="space-y-4">
           {rules.map((rule, index) => (
             <li key={index} className="flex items-start gap-4 transition-transform duration-200 hover:translate-x-1">
@@ -53,11 +53,6 @@ const AboutDisclaimer = () => {
             </li>
           ))}
         </ul>
-      </div>
-
-      {/* Footer Line */}
-      <div className="mt-10 border-t border-black pt-2 text-center text-lg text-black">
-        Check & Mate e tech Solution
       </div>
     </section>
   );

@@ -10,7 +10,8 @@ import FeesStructure from './pages/feesstructurepage/FeesStructure';
 import Gallery from './pages/galllerypage/Gallery';
 import ContactUs from './pages/contactuspage/ContactUs';
 import Disclaimer from './pages/disclaimerpage/Disclaimer';
-import Login from './pages/loginpage/Login'
+import Footer from './components/footer/Footer';
+// import Login from './pages/loginpage/Login'
 
 const App = () => {
   return (
@@ -26,9 +27,9 @@ const App = () => {
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/contactus' element={<ContactUs />} />
         <Route path='/disclaimer' element={<Disclaimer />} />
-        <Route path='/login' element={<Login />} />
-
+        {/* <Route path='/login' element={<Login />} /> */}
       </Routes>
+      <Footer />
     </Router>
   );
 };
