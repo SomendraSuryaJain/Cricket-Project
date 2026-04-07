@@ -47,7 +47,7 @@ const AboutUs = () => {
       <div className="relative w-full h-[400px] md:h-[500px]">
         
         {/* Background Image */}
-        <img src="https://wallpaperaccess.com/full/1315984.jpg" alt="academy" className="w-full h-40 md:h-full object-fit-cover"/>
+        <img src="https://wallpaperaccess.com/full/1315984.jpg" alt="academy" className="w-full h-full object-fit-cover"/>
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/20"></div>
