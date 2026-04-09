@@ -6,7 +6,7 @@ import "swiper/css/effect-fade";
 
 const slides = [
   {
-    img: "https://static0.givemesportimages.com/wordpress/wp-content/uploads/2024/01/epl_awards.jpg",
+    img: "src/Assets/hero1.jpg",
     text: "Our players win several awards and laurels.",
   },
   {
@@ -21,7 +21,7 @@ const slides = [
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-[40vh] md:h-[65vh] relative">
+    <div className="w-full h-[40vh] md:h-[80vh] relative">
       <Swiper modules={[Autoplay, EffectFade]} effect="fade"
         autoplay={{ delay: 5000, disableOnInteraction: false}} loop={true} className="h-full">
         {slides.map((item, index) => (

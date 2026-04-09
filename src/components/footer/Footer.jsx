@@ -8,10 +8,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-slate-950 text-slate-300 font-sans">
+    <footer className="w-full bg-slate-900 text-slate-300">
       {/* Newsletter Section */}
       <div className="border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-6 py-8 md:flex md:items-center md:justify-between gap-6">
+        <div className="max-w-9xl md:px-30 mx-auto px-6 py-8 md:flex md:items-center md:justify-between gap-6">
           <div className="flex items-center gap-4 mb-6 md:mb-0">
             <div className="bg-green-500 p-3 rounded-full flex-shrink-0">
               <FaBell className="w-6 h-6 text-slate-950" />
@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
 
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-6 py-10">
+      <div className="max-w-9xl md:px-20 mx-auto px-6 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           
           {/* Brand Info */}
@@ -46,7 +46,7 @@ const Footer = () => {
               </span>
             </div> */}
             <div className='flex items-center gap-2'>
-                <img src="/Logo.jpeg" alt="Logo" className='h-24 w-30 object-contain' />
+                <img src="/Logo.jpeg" alt="Logo" className='h-24 w-30 md-h-40 md:w-30 object-contain' />
                 <div className='leading-tight '>
                     <h1 className='text-green-500 font-bold text-lg md:text-3xl'>AB Cricket</h1>
                     <p className='text-sm'>Development Academy</p>

@@ -16,12 +16,12 @@ const AboutGallery = () => {
     <div className="bg-gray-100 py-12 px-4 md:px-20">
       
       {/* Heading */}
-      <h1 className="text-center text-3xl md:text-4xl font-bold text-red-600 mb-10">
-        Gallery
+      <h1 className="text-center text-3xl md:text-6xl font-bold text-red-600 mb-10">
+        Our Gallery
       </h1>
 
       {/* Image Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="max-w-9xl md:px-40 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {images.map((img, index) => (
           <div key={index} className="overflow-hidden rounded-lg shadow-md group">
             <img src={img} alt={`gallery-${index}`}

@@ -109,10 +109,10 @@ const NewsLayout = () => {
 
   return (
     <section className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-9xl md:px-20 mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl md:text-6xl font-extrabold text-gray-900 sm:text-4xl">
             In The <span className="text-blue-700">Media</span>
           </h2>
           <div className="mt-2 h-1.5 w-20 bg-green-500 mx-auto rounded-full"></div>

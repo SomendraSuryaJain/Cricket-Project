@@ -16,7 +16,7 @@ const AboutUs = () => {
         </h1>
 
         {/* Main Section */}
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
           
           {/* Image */}
           <div className="w-full md:w-1/2">
