@@ -10,7 +10,7 @@ const slides = [
     text: "Our players win several awards and laurels.",
   },
   {
-    img: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200",
+    img: "src/Assets/hero2.jpg",
     text: "We provide professional cricket training.",
   },
   {
@@ -35,8 +35,8 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-black/30 z-10"></div>
 
               {/* Bottom Text Box */}
-              <div className="absolute bottom-10 left-5 md:left-16 z-20">
-                <div className="text-white px-6 py-4 max-w-xl border border-white">
+              <div className="absolute bottom-10 left-1 md:left-16 z-20">
+                <div className="text-white px-2 py-2 max-w-xl border border-white">
                   <p className="text-lg md:text-2xl font-medium">{item.text}</p>
                 </div>
               </div>

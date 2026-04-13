@@ -32,7 +32,7 @@ const AboutUs = () => {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4 mt-8">
+            <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
               <button onClick={() => navigate('/about')} className="bg-red-300 text-white px-6 py-3 rounded hover:bg-red-400 transition">Know more</button>
 
               <button onClick={() => navigate('/registration')} className="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600 transition">New Admission</button>
@@ -53,7 +53,7 @@ const AboutUs = () => {
         <div className="absolute inset-0 bg-black/20"></div>
 
         {/* Text Box */}
-        <div className="absolute right-5 md:right-20 top-1/2 transform -translate-y-1/2 bg-white/60 p-6 md:p-8 max-w-lg h-fit rounded shadow-lg">
+        <div className="absolute md:right-20 top-1/2 transform -translate-y-1/2 bg-white/60 p-6 md:p-8 max-w-lg h-fit rounded shadow-lg">
           
           <p className="text-sm md:text-xl text-gray-800 leading-8">
             There are many more facilities like bowling machines etc. We have given more than 30 state and national players which most by any academy in Lucknow. 

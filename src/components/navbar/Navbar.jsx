@@ -19,8 +19,8 @@ const Navbar = () => {
             <div className='flex items-center gap-2'>
                 <img src="/Picture.png" alt="Logo" className='h-24 w-24 md:h-24 md:w-40 object-contain' />
                 <div className='leading-tight '>
-                    <h1 className='text-green-500 font-bold text-lg md:text-3xl'>AB Cricket</h1>
-                    <p className='font-bold text-lg'>Development Academy</p>
+                    <h1 className='text-green-500 font-bold text-xl md:text-3xl'>AB Cricket</h1>
+                    <p className='font-bold text-sm'>Development Academy</p>
                 </div>
             </div>
 

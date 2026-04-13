@@ -1,8 +1,10 @@
+import { Target } from 'lucide-react';
 import React from 'react';
 import { FaBell, FaFacebook, FaPhoneAlt, FaTrophy, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { FaSquareInstagram } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
 import { IoGlobeSharp } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -65,7 +67,7 @@ const Footer = () => {
           </div>
 
           {/* Matches Links */}
-          <div className='ml-7'>
+          <div>
             <h4 className="text-white font-bold mb-5 text-sm md:text-xl uppercase tracking-widest border-l-4 border-green-500 pl-3">Matches</h4>
             <ul className="space-y-3 text-sm md:text-lg">
               <li><a href="#" className="hover:text-white transition-all">IPL Live Score</a></li>
@@ -120,7 +122,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="bg-black py-6 border-t border-slate-900 text-center text-xs md:text-xl text-white">
-        <p>© {currentYear} AB Cricket Development Academy. All rights reserved.</p>
+        <p>© {currentYear} Design & Developed by <span className='font-bold'><Link to='https://www.nexverratechnologies.com/' target="_blank" className='hover:text-blue-400'>NexVerra Technology</Link></span>. All rights reserved.</p>
       </div>
     </footer>
   );
