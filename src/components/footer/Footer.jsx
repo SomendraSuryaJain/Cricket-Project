@@ -121,8 +121,9 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="bg-black py-6 border-t border-slate-900 text-center text-xs md:text-xl text-white">
-        <p>© {currentYear} Design & Developed by <span className='font-bold'><Link to='https://www.nexverratechnologies.com/' target="_blank" className='hover:text-blue-400'>NexVerra Technology</Link></span>. All rights reserved.</p>
+      <div className="bg-black py-6 border-t border-slate-900 flex flex-col gap-1  text-center text-xl md:text-xl text-white">
+        <p className='text-xl md:text-xl'>All rights reserved.</p>
+        <p>© {currentYear} Design & Developed by <span className='font-bold'><Link to='https://www.nexverratechnologies.com/' target="_blank" className='hover:text-blue-400 text-green-400'>NexVerra Technology</Link></span>.</p>
       </div>
     </footer>
   );

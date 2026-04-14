@@ -14,7 +14,8 @@ const Navbar = () => {
     };
 
     return (
-        <nav className='relative h-24 flex items-center justify-between p-6 md:p-10'>
+        // Added 'sticky top-0 z-50 bg-white' to lock it to the top
+        <nav className='sticky top-0 z-50 bg-white shadow-sm h-24 flex items-center justify-between p-6 md:p-10'>
             {/* Logo Section */}
             <div className='flex items-center gap-2'>
                 <img src="/Picture.png" alt="Logo" className='h-24 w-24 md:h-24 md:w-40 object-contain' />
@@ -35,12 +36,13 @@ const Navbar = () => {
             {/* --- Drawer Overlay --- */}
             {isOpen && (
                 <div 
-                    className="fixed inset-0 bg-black/50 z-40 transition-opacity"
+                    className="fixed inset-0 bg-black/50 z-[60] transition-opacity"
                     onClick={() => setIsOpen(false)}/>
             )}
 
             {/* --- Drawer Side Panel --- */}
-            <div className={`fixed top-0 right-0 h-full w-80 bg-red-500 z-50 shadow-2xl transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            {/* Note: Increased z-index to z-[70] to stay above the sticky navbar */}
+            <div className={`fixed top-0 right-0 h-full w-80 bg-red-500 z-[70] shadow-2xl transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 
                 {/* Close Button Inside Drawer */}
                 <div className="flex justify-end p-5">
@@ -58,7 +60,6 @@ const Navbar = () => {
                     <li onClick={() => handleNavigation('/gallery')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Gallery</li>
                     <li onClick={() => handleNavigation('/contactus')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Contact us</li>
                     <li onClick={() => handleNavigation('/disclaimer')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Disclaimer</li>
-                    {/* <li onClick={() => handleNavigation('/login')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Login</li> */}
                 </ul>
             </div>
         </nav>
