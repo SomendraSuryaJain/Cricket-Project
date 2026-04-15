@@ -147,14 +147,14 @@ const NewsLayout = () => {
   ];
 
   return (
-    <section className="bg-green-100 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="bg-green-100 py-6 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-9xl md:px-20 mx-auto">
         {/* Header */}
-        <div className="text-center mb-5">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+        <div className="text-center mb-4">
+          <h2 className="text-md md:text-4xl font-extrabold text-gray-900">
             In The <span className="text-blue-700">Media</span>
           </h2>
-          <div className="mt-2 h-1.5 w-20 bg-green-500 mx-auto rounded-full"></div>
+          <div className="mt-1 h-1 w-20 bg-green-500 mx-auto rounded-full"></div>
         </div>
 
         {/* Swiper Slider */}

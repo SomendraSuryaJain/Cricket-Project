@@ -29,8 +29,8 @@ const Navbar = () => {
             <div 
                 className='flex items-center gap-2 cursor-pointer hover:opacity-80 transition-all'
                 onClick={() => setIsOpen(true)}>
-                <Menu size={28} className='text-red-600' />
-                <h1 className='text-red-600 font-bold hidden md:block'>Menu</h1>
+                <Menu size={28} className='text-blue-600' />
+                <h1 className='text-blue-600 font-bold hidden md:block'>Menu</h1>
             </div>
 
             {/* --- Drawer Overlay --- */}
@@ -42,7 +42,7 @@ const Navbar = () => {
 
             {/* --- Drawer Side Panel --- */}
             {/* Note: Increased z-index to z-[70] to stay above the sticky navbar */}
-            <div className={`fixed top-0 right-0 h-full w-80 bg-red-500 z-[70] shadow-2xl transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed top-0 right-0 h-full w-60 md:w-80 bg-green-500 z-[70] shadow-2xl transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 
                 {/* Close Button Inside Drawer */}
                 <div className="flex justify-end p-5">
@@ -51,15 +51,15 @@ const Navbar = () => {
 
                 {/* Drawer Links */}
                 <ul className="flex flex-col gap-6 p-10 font-bold text-white">
-                    <li onClick={() => handleNavigation('/')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Home</li>
-                    <li onClick={() => handleNavigation('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">About Us</li>
-                    <li onClick={() => handleNavigation('/achievements')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Our Achievements</li>
-                    <li onClick={() => handleNavigation('/registration')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">New Registration</li>
-                    <li onClick={() => handleNavigation('/coach')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Our Coach</li>
-                    <li onClick={() => handleNavigation('/feesStructure')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Fees Structure</li>
-                    <li onClick={() => handleNavigation('/gallery')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Gallery</li>
-                    <li onClick={() => handleNavigation('/contactus')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Contact us</li>
-                    <li onClick={() => handleNavigation('/disclaimer')} className="cursor-pointer md:text-xl hover:underline hover:text-yellow-200">Disclaimer</li>
+                    <li onClick={() => handleNavigation('/')} className="cursor-pointer md:text-xl hover:underline hover:text-blue-800">Home</li>
+                    <li onClick={() => handleNavigation('/about')} className="cursor-pointer md:text-xl hover:underline hover:text-blue-800">About Us</li>
+                    <li onClick={() => handleNavigation('/achievements')} className="cursor-pointer md:text-xl hover:underline hover:text-blue-800">Our Achievements</li>
+                    <li onClick={() => handleNavigation('/registration')} className="cursor-pointer md:text-xl hover:underline hover:text-blue-800">New Registration</li>
+                    <li onClick={() => handleNavigation('/coach')} className="cursor-pointer md:text-xl hover:underline hover:text-blue-800">Our Coach</li>
+                    <li onClick={() => handleNavigation('/feesStructure')} className="cursor-pointer md:text-xl hover:underline hover:text-blue-800">Fees Structure</li>
+                    <li onClick={() => handleNavigation('/gallery')} className="cursor-pointer md:text-xl hover:underline hover:text-blue-800">Gallery</li>
+                    <li onClick={() => handleNavigation('/contactus')} className="cursor-pointer md:text-xl hover:underline hover:text-blue-800">Contact us</li>
+                    <li onClick={() => handleNavigation('/disclaimer')} className="cursor-pointer md:text-xl hover:underline hover:text-blue-800">Disclaimer</li>
                 </ul>
             </div>
         </nav>
