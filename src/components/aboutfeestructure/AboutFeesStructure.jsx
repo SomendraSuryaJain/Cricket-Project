@@ -5,7 +5,7 @@ const AboutFeesStructure = () => {
     <div className="bg-gray-100 py-12 px-4 md:px-20">
       
       {/* Heading */}
-      <h1 className="text-center text-3xl md:text-6xl font-bold text-red-600 mb-10">
+      <h1 className="text-center text-3xl md:text-6xl font-bold text-green-600 underline mb-10">
         Fees Structure
       </h1>
 

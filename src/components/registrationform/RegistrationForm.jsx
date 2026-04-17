@@ -35,7 +35,7 @@ const RegistrationForm = () => {
     <div className="bg-gray-100 py-10 px-4 sm:px-6 lg:px-16">
       
       {/* Heading */}
-      <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-red-600 mb-8">
+      <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-green-600 mb-8">
         New Registration
       </h1>
 
@@ -111,7 +111,7 @@ const RegistrationForm = () => {
         {/* Submit */}
         <div className="mt-6 flex items-center justify-center">
           <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
-            Submit
+            Submit Details
           </button>
         </div>
       </form>

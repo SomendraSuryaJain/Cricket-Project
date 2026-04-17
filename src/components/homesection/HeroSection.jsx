@@ -231,7 +231,7 @@
 //         autoplay={{ delay: 6000, disableOnInteraction: false }}
 //         loop={true}
 //         className="h-full"
-//       >
+//            >
 //         {slides.map((item, index) => (
 //           <SwiperSlide key={index}>
 //             <div className="relative w-full h-full">
@@ -346,7 +346,7 @@ const slides = [
   },
   {
     img: "src/Assets/hero_image/hero2.jpeg",
-    slogan: "Modern Gear, Classic Techni..",
+    slogan: "Modern Gear, Classic Technique",
     text: "We provide professional cricket training with top-class facilities.",
   },
   {
@@ -393,23 +393,23 @@ const HeroSection = () => {
           <SwiperSlide key={index}>
             <div className="relative w-full h-full">
               {/* Background Image */}
-              <img src={item.img} alt="hero" className="w-full h-full object-cover"/>
+              <img src={item.img} alt="hero" className="w-full h-full object-fit"/>
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/70 z-10"></div>
 
               {/* Content Container - Flex direction changes on mobile */}
-              <div className="absolute inset-0 z-20 flex items-center justify-center overflow-y-auto">
-                <div className="container mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center md:mt-0">
+              <div className="absolute max-w-9xl inset-0 z-20 pl-25 flex items-center justify-center overflow-y-auto">
+                <div className="container mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-center md:mt-0">
                   
                   {/* LEFT SIDE: Slogan & Text */}
-                  <div className="text-white space-y-2 md:space-y-4 text-center lg:text-left">
+                  <div className="text-white space-y-2 md:space-y-6 md:w-[110%] text-center lg:text-left">
                     <motion.h2 
                       key={`slogan-${index}`}
                       variants={containerVariants}
                       initial="hidden"
                       animate="visible"
-                      className="text-2xl md:text-5xl lg:text-6xl text-green-400">
+                      className="text-2xl md:text-3xl lg:text-4xl text-green-400">
                       {item.slogan.split("").map((char, charIndex) => (
                         <motion.span 
                           key={`${char}-${charIndex}`} 
@@ -429,7 +429,7 @@ const HeroSection = () => {
                     <motion.button initial={{ opacity: 0, y: 20 }}animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 1.5 }}
                       onClick={() => navigate('/contactus')}
-                      className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-md transition-all transform hover:scale-105 uppercase tracking-wider text-xs md:text-base shadow-xl">
+                      className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-md transition-all transform hover:scale-105 uppercase tracking-wider text-xs md:text-base shadow-xl">
                       Join the Academy
                     </motion.button>
                   </div>

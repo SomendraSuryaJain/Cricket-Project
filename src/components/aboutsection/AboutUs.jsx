@@ -6,10 +6,10 @@ const AboutUs = () => {
             <div className="max-w-7xl mx-auto text-center">
 
                 {/* Heading */}
-                <h2 className="text-2xl md:text-5xl font-bold text-red-600 mb-6">About Us</h2>
+                <h2 className="text-2xl md:text-5xl font-bold text-green-600 mb-6">About Us</h2>
 
                 {/* Paragraphs */}
-                <div className="text-gray-800 text-md md:text-xl leading-relaxed space-y-4 text-justify">
+                <div className="text-gray-800 text-md md:text-xl space-y-4 text-justify">
                     <p>
                         <span className="font-bold">AB Cricket Development Academy</span> has state of the art facility, featuring a
                         cricket ground with 21 practice pitches in the ground, 3 grounds to
@@ -44,7 +44,7 @@ const AboutUs = () => {
 
                 {/* Image */}
                 <div className="mt-6">
-                    <img src="src\Assets\player.jpg" alt="academy" className="w-full h-56 md:h-72 object-cover rounded-md" />
+                    <img src="src\Assets\player.jpg" alt="academy" className="w-full h-56 md:h-100 object-cover rounded-md" />
                 </div>
 
                 {/* Extra Text */}
@@ -59,8 +59,8 @@ const AboutUs = () => {
 
                     {/* Mission */}
                     <div>
-                        <h3 className="font-bold underline mb-2">Mission</h3>
-                        <p className="text-gray-700 leading-relaxed">
+                        <h3 className="font-bold bg-blue-400 text-white md:p-2 rounded rounded-2xl underline mb-2 text-center">Mission</h3>
+                        <p className="text-gray-700">
                             To develop in every player an active and positive mind, a sense of
                             understanding and compassion for the game and the courage to act
                             on their beliefs. We stress the total development of each child:
@@ -70,8 +70,8 @@ const AboutUs = () => {
 
                     {/* Vision */}
                     <div>
-                        <h3 className="font-bold underline mb-2">Vision</h3>
-                        <p className="text-gray-700 leading-relaxed">
+                        <h3 className="font-bold bg-blue-400 text-white md:p-2 rounded rounded-2xl underline mb-2 text-center">Vision</h3>
+                        <p className="text-gray-700">
                             To provide a stimulating learning environment with correct coaching
                             techniques which maximises individual potential and ensures that
                             players of all ability levels are well equipped to meet the
@@ -79,20 +79,18 @@ const AboutUs = () => {
                         </p>
                     </div>
 
-                    {/* Uniqueness */}
                     <div>
-                        <h3 className="font-bold underline mb-2">Uniqueness</h3>
-
-                        <div className="max-h-60 md:max-h-72 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
-                            <ul className="text-gray-700 space-y-2 list-disc list-inside pl-6">
+                        <h3 className="font-bold bg-blue-400 text-white md:p-2 rounded rounded-2xl underline mb-2 text-center">Uniqueness</h3>
+                        <div className="pr-2">
+                            <ul className="text-gray-700 list-disc list-inside pl-6">
                                 <li>We have 3 match grounds and 21 practice pitches.</li>
                                 <li>Qualified professional coaches.</li>
                                 <li>Strength & conditioning coach available.</li>
                                 <li>Well equipped gym for players.</li>
-                                <li>Most state & national players from the city.</li>
-                                <li>Seven registered cricket clubs in Lucknow.</li>
-                                <li>Practice facilities available in rainy season.</li>
-                                <li>Bowling machines available.</li>
+                                {/* <li>Most state & national players from the city.</li> */}
+                                {/* <li>Seven registered cricket clubs in Lucknow.</li> */}
+                                {/* <li>Practice facilities available in rainy season.</li> */}
+                                {/* <li>Bowling machines available.</li> */}
                                 <li>Weekend & holiday matches provided.</li>
                                 <li>Variety of pitches, rollers & pitch covers.</li>
                                 <li>Visits from national & international players.</li>

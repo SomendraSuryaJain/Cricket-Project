@@ -124,7 +124,7 @@ const AboutAchievements = () => {
     <div className="bg-gray-50 min-h-screen pb-10">
       {/* Header Section */}
       <div className="bg-white flex flex-col gap-3 shadow-sm py-8 px-6 text-center border-b border-gray-200">
-        <h1 className="text-3xl md:text-5xl font-black text-red-600 tracking-tight">
+        <h1 className="text-3xl md:text-5xl font-black text-green-600 tracking-tight">
           Our Achievements
         </h1>
 
@@ -142,12 +142,12 @@ const AboutAchievements = () => {
           <input
             type="text"
             placeholder="Add new achievement..."
-            className="flex-1 bg-gray-50 border-none outline-none p-3 rounded-lg focus:ring-1 focus:ring-red-500"
+            className="flex-1 bg-gray-50 border-none outline-none p-3 rounded-lg focus:ring-1 focus:ring-blue-500"
             value={newItem}
             onChange={(e) => setNewItem(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && addItem()} />
           <button onClick={addItem}
-            className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-bold flex items-center gap-2 transition-all active:scale-95">
+            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-bold flex items-center gap-2 transition-all active:scale-95">
             <PlusCircle size={20} /> <span className="hidden sm:inline">Add</span>
           </button>
         </div>
@@ -162,18 +162,18 @@ const AboutAchievements = () => {
               <div className="space-y-3">
                 {achievements.map((item, index) => (
                   <div key={index}
-                    className="bg-gray-50 border border-gray-100 p-4 rounded-xl flex items-center justify-between group hover:bg-white hover:border-red-200 transition-all">
+                    className="bg-gray-50 border border-gray-100 p-4 rounded-xl flex items-center justify-between group hover:bg-white hover:border-blue-400 transition-all">
                     {editingIndex === index ? (
                       <div className="flex flex-1 gap-2 items-center">
-                        <input type="text" className="flex-1 border-b-2 border-red-500 bg-transparent outline-none p-1"
+                        <input type="text" className="flex-1 border-b-2 border-blue-500 bg-transparent outline-none p-1"
                           value={editingText} onChange={(e) => setEditingText(e.target.value)} autoFocus />
                         <button onClick={() => saveEdit(index)} className="text-green-600"><Check size={20} /></button>
-                        <button onClick={() => setEditingIndex(null)} className="text-gray-400"><X size={20} /></button>
+                        <button onClick={() => setEditingIndex(null)} className="text-red-400"><X size={20} /></button>
                       </div>
                     ) : (
                       <>
                         <div className="flex gap-3 items-center pr-4">
-                          <span className="text-red-500 text-4xl font-bold">•</span>
+                          <span className="text-blue-500 text-4xl font-bold">•</span>
                           <p className="text-gray-800 text-sm md:text-base font-medium">{item}</p>
                         </div>
                         <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity">

@@ -61,7 +61,7 @@ const AboutCoach = () => {
     <div className="bg-gradient-to-b from-gray-100 to-gray-200 py-12 px-4 md:px-20">
       
       {/* Heading */}
-      <h1 className="text-center text-3xl md:text-6xl font-bold text-red-600 mb-12">
+      <h1 className="text-center text-3xl md:text-6xl font-bold text-green-600 mb-12">
         Our Coach
       </h1>
 

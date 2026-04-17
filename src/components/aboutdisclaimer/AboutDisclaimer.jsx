@@ -33,14 +33,14 @@ const AboutDisclaimer = () => {
     <section className="max-w-7xl mx-auto px-4 py-12 bg-grey-300 sm:px-6 lg:px-8">
       {/* Title */}
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-red-600 uppercase tracking-wider mb-2">
+        <h2 className="text-3xl md:text-4xl font-bold text-green-600 uppercase tracking-wider mb-2">
           Disclaimer
         </h2>
         {/* <div className="h-1 w-20 bg-red-600 mx-auto rounded-full"></div> */}
       </div>
 
       {/* Rules List */}
-      <div className="bg-green-200 rounded-2xl p-6 md:p-10 shadow-sm border-4 border-blue-200">
+      <div className="bg-blue-100 rounded-2xl p-6 md:p-10 shadow-sm border-4 border-blue-300">
         <ul className="space-y-4">
           {rules.map((rule, index) => (
             <li key={index} className="flex items-start gap-4 transition-transform duration-200 hover:translate-x-1">
